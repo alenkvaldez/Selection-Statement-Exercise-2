@@ -8,22 +8,28 @@ namespace SelectionStatementsExercise2
         {
             Console.WriteLine("whats your fave school subject?");
 
-            var subjcet = Console.ReadLine();
+            var subject = Console.ReadLine();
 
             switch (subject)
             {
-                case "Concepts in Rehabalitiatino":
+                case "Concepts in Rehabalitation":
                     Console.WriteLine("concepts is not that bad");
                     break;
-                case "Clinical Conditions and Applications"
+
+                case "Clinical Conditions and Applications":
                     Console.WriteLine("Condition and apps is a little bad");
                     break;
-                case "Neuro for OT"
+
+                case "Neuro for OT":
                     Console.WriteLine("pretty bad");
+                    break;
+
+                case "Professional Practice":
+                    Console.WriteLine("free class oh yes");
+                    break;
+
                 default:
-                    Console.WriteLine("i have never heard of that subject in my life what is that. {subject} sounds ok though");
-                case "Professional Practice"
-                    Console.WriteLine("free class yes");
+                    Console.WriteLine($"i have never heard of that subject in my life what is that. {subject} sounds ok though");
                     break;
             }
         }
